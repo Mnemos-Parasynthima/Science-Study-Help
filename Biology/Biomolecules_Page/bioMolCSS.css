@@ -45,8 +45,7 @@ body {
     background-color: #333;
 }
 
-
-.navbar a {
+.navbar a :not(#webName) {
     float: right;
     font-size: 16px;
     color: white;
@@ -54,8 +53,8 @@ body {
     padding: 14px 16px;
     text-decoration: none;
 }
-
-.navbar p {
+  
+.navbar p :not(#webName) {
     float: left;
     font-size: 20px;
     color: white;
@@ -63,12 +62,12 @@ body {
     padding: 14px 16px;
     text-decoration: none;
 }
-
+  
 .dropdown {
     float: right;
     overflow: hidden;
 }
-
+  
 .dropdown .dropbtn {
     font-size: 16px;    
     border: none;
@@ -79,8 +78,8 @@ body {
     font-family: inherit;
     margin: 0;
 }
-
-.navbar a:hover, .dropdown:hover .dropbtn {
+  
+.navbar a:hover :not(#webName), .dropdown:hover .dropbtn {
     background-color: red;
 }
 
@@ -116,9 +115,27 @@ a {
     padding: 8px 16px;
 }
 
-a:hover {
+a:hover :not(#webName) {
     background-color: #ddd;
     color: black;
+}
+
+#webName a:link {
+  color: white;
+}
+
+#webName a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+#webName {
+  float: left;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding: 5px 10px;
+  text-decoration: none;
 }
 
 .previous {
