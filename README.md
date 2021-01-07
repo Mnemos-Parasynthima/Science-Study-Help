@@ -1,4 +1,4 @@
-# ScienceWeb
+# Science-Study-Help
 A website for science stuff.
 
 index.html is a temporary main site.
