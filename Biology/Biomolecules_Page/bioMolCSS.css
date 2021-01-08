@@ -1,152 +1,115 @@
+/* Styling for content */
 body {
-  font-family: "Georgia";
-  text-align: center;
-  padding-left: 5px;
-  padding-right: 5px;
+    font-family: "Georgia";
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 .copyright {
-  font-size: 10px;
+    font-size: 10px;
 }
 #table_of_contents {
-  width: 25%;
-  border: 3px solid lightgrey;
-  text-align: left;
-  margin-left: 500px;
+    width: 25%;
+    border: 3px solid lightgrey;
+    text-align: left;
+    margin-left: 500px;
 }
 #intro {
-  /*width: 55%;*/
-  margin-left: 240px;
-  text-align: left;
-  text-indent: 10px;
-  padding-left: 5px;
-  padding-right: 5px;
+    /*width: 55%;*/
+    margin-left: 240px;
+    text-align: left;
+    text-indent: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 .info p {
-  margin-left: 5px;
-  text-align: left;
-  text-indent: 10px;
-  padding-left: 5px;
-  padding-right: 5px;
+    margin-left: 5px;
+    text-align: left;
+    text-indent: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 #srcs {
-  width: 25%;
-  text-align: left;
-  margin-left: 500px;
+    width: 25%;
+    text-align: left;
+    margin-left: 500px;
 }
-
+  
 #body {
-  border: 1px solid grey;
-  width: 70%;
-  margin-left: 200px;
+    border: 1px solid grey;
+    width: 70%;
+    margin-left: 200px;
+}
+  
+/* Styling for the navigation bar and dropdown */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
 }
 
-.navbar {
-    overflow: hidden;
-    background-color: #333;
+li {
+  float: left;
 }
 
-.navbar a :not(#webName) {
-    float: right;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
-  
-.navbar p :not(#webName) {
-    float: left;
-    font-size: 20px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+
+li a:hover :not(#sciWeb), .dropdown:hover .dropbtn {
+  background-color: red;
 }
-  
-.dropdown {
-    float: right;
-    overflow: hidden;
-}
-  
-.dropdown .dropbtn {
-    font-size: 16px;    
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-}
-  
-.navbar a:hover :not(#webName), .dropdown:hover .dropbtn {
-    background-color: red;
+
+li.dropdown {
+  display: inline-block;
 }
 
 .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
 }
 
 .dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
 }
 
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
+.dropdown-content a:hover {background-color: #f1f1f1;}
 
 .dropdown:hover .dropdown-content {
-    display: block;
+  display: block;
 }
 
-a {
-    text-decoration: none;
-    display: inline-block;
-    padding: 8px 16px;
-}
-
-a:hover :not(#webName) {
-    background-color: #ddd;
-    color: black;
-}
-
-#webName a:link {
-  color: white;
-}
-
-#webName a:visited {
-  color: white;
-  text-decoration: none;
-}
-
-#webName {
-  float: left;
+#sciWeb {
   font-size: 20px;
-  color: white;
-  text-align: center;
-  padding: 5px 10px;
-  text-decoration: none;
+  padding: 15px 35px;
 }
-
+/* End navigation */
+  
 .previous {
     background-color: #f1f1f1;
     color: black;
 }
-
+  
 .next {
     background-color: #f1f1f1;
     color: black;
 }
+
+/* Styling for images */ 
 #bioMol {
    height: 480px;
    position: relative;
