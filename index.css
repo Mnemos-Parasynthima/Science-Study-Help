@@ -1,3 +1,28 @@
+/* Styling for the content */
+body {
+    font-family: "Georgia";
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.copyright {
+    font-size: 10px;
+}
+#intro {
+    /*width: 55%;*/
+    /*margin-left: 240px;*/
+    text-align: justify;
+    text-indent: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}  
+#body {
+    border: 1px solid grey;
+    width: 70%;
+    margin-left: 200px;
+}
+
+/* Styling for the navigation bar and dropdown */
 ul {
   list-style-type: none;
   margin: 0;
@@ -18,7 +43,7 @@ li a, .dropbtn {
   text-decoration: none;
 }
 
-li a:hover, .dropdown:hover .dropbtn {
+li a:hover :not(#sciWeb), .dropdown:hover .dropbtn {
   background-color: red;
 }
 
@@ -48,3 +73,10 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+#sciWeb {
+  font-size: 20px;
+  padding: 15px 35px;
+}
+
+/* Styling for images */
