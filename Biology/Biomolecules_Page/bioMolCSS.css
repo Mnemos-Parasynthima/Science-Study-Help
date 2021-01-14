@@ -8,12 +8,7 @@ body {
 .copyright {
     font-size: 10px;
 }
-#table_of_contents {
-    width: 25%;
-    border: 3px solid lightgrey;
-    text-align: left;
-    margin-left: 500px;
-}
+
 #intro {
     /*width: 55%;*/
     margin-left: 240px;
@@ -40,9 +35,9 @@ body {
     width: 70%;
     margin-left: 200px;
 }
-  
+
 /* Styling for the navigation bar and dropdown */
-ul {
+#nav {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -98,15 +93,23 @@ li.dropdown {
   padding: 15px 35px;
 }
 /* End navigation */
-  
-.previous {
-    background-color: #f1f1f1;
-    color: black;
+
+.buttons a {
+  text-decoration: blue;
+  display: inline-block;
+  padding: 8px 16px;
 }
-  
-.next {
-    background-color: #f1f1f1;
-    color: black;
+
+.buttons {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+#table_of_contents {
+    width: 25%;
+    border: 3px solid lightgrey;
+    text-align: left;
+    margin-left: 500px;
 }
 
 /* Styling for images */ 
