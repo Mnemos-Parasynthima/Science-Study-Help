@@ -9,20 +9,12 @@ body {
     font-size: 10px;
 }
 
-#intro {
-    /*width: 55%;*/
-    margin-left: 240px;
-    text-align: left;
-    text-indent: 10px;
-    padding-left: 5px;
-    padding-right: 5px;
-}
-.info p {
+.info p, #intro {
     margin-left: 5px;
-    text-align: left;
     text-indent: 10px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
 }
 #srcs {
     width: 25%;
@@ -45,7 +37,7 @@ body {
   background-color: #333;
 }
 
-li {
+#nav li {
   float: left;
 }
 
@@ -57,9 +49,9 @@ li a, .dropbtn {
   text-decoration: none;
 }
 
-li a:hover :not(#sciWeb), .dropdown:hover .dropbtn {
+/*li a:hover, .dropdown:hover .dropbtn {
   background-color: red;
-}
+}*/
 
 li.dropdown {
   display: inline-block;
@@ -82,7 +74,7 @@ li.dropdown {
   text-align: left;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown-content a:hover { background-color: #f1f1f1; }
 
 .dropdown:hover .dropdown-content {
   display: block;
@@ -94,26 +86,32 @@ li.dropdown {
 }
 /* End navigation */
 
-.buttons a {
+#prev {
+  background-color: #f1f1f1;
+  color: black;
   text-decoration: blue;
   display: inline-block;
   padding: 8px 16px;
 }
 
-.buttons {
+#next {
   background-color: #f1f1f1;
   color: black;
+  text-decoration: blue;
+  display: inline-block;
+  padding: 8px 16px;
 }
 
+
 #table_of_contents {
-    width: 25%;
-    border: 3px solid lightgrey;
-    text-align: left;
-    margin-left: 500px;
+  width: 25%;
+  border: 3px solid lightgrey;
+  text-align: left;
+  margin-left: 500px;
 }
 
 /* Styling for images */ 
-#bioMol {
+/*#bioMol {
    height: 480px;
    position: relative;
    left: 225px;
@@ -132,4 +130,4 @@ li.dropdown {
 }
 #aminoAcid3, #nucleicAcid {
   height: 300px;
-}
+}*/
